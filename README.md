@@ -10,17 +10,26 @@ Start the Project:
 npm run dev
 ```
 
+Start the Fake API:
+```sh
+npx json-server server.json --host 192.168.10.112 -p 3333 -w -d 500
+```
+
 Install the dependencies:
 ```sh
 npm i styled-components
 npm i phosphor-react
 npm i @radix-ui/react-dialog
 npm i @radix-ui/react-radio-group
+npm i react-hook-form
+npm i zod
+npm i @hookform/resolvers
 ```
 
 Install the development dependencies:
 ```sh
 npm i @types/styled-components -D
+npm i json-server -D
 ```
 
 ## Fonts:
@@ -49,7 +58,12 @@ npm i @types/styled-components -D
 
 ## 2. Connecting with the API
 
-- Setting up JSON Server
+- Setting up [JSON Server](https://github.com/typicode/json-server)
+ Console log the current date:
+```sh
+new Date().toISOString()
+```
+
 - Performing HTTP request
 - Creating transaction context
 - Calculating transaction summary
